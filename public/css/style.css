@@ -1,0 +1,1590 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #121212;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: #000000;
+    padding: 0 30px;
+}
+
+header div.desktop-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header img#menuVertical {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+header div.desktop-container div.modo {
+    display: flex;
+    align-items: center;
+}
+
+header div.desktop-container div.modo div.status {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header div.desktop-container div.modo div.status div.sinalizador {
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+header div.desktop-container div.modo div.status a {
+    font-weight: bolder;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+header div.desktop-container div.modo div.claroEscuro img#dark {
+    display: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+header div.desktop-container div.modo div.claroEscuro img#light {
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+header div.desktop-container div.logo {
+    display: flex;
+}
+
+header div.desktop-container div.logo p {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+header div.desktop-container div.logo ul {
+    display: flex;
+}
+
+header div.desktop-container div.logo ul li {
+    list-style: none;
+    white-space: nowrap;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+header div.desktop-container div.logo ul li a {
+    text-decoration: none;
+    color: #B3B3B3;
+}
+
+header div.desktop-container div.logo ul li a:hover {
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+/********************* SECTION INTRODUCAO *************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+main section.introducao-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: calc(100vh - 65px);
+    border-bottom: 1px solid #ffffff;
+    margin: 10px;
+}
+
+main section.introducao-container div.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+}
+
+main section.introducao-container div.info-basica p,
+main section.introducao-container div.info-basica h1,
+main section.introducao-container div.curriculo a {
+    white-space: wrap;
+    text-decoration: none;
+}
+
+main section.introducao-container div.info-basica h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+main section.introducao-container div.info-basica p {
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+main section.introducao-container div.curriculo a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main section.introducao-container div.curriculo {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main section.introducao-container div.curriculo:hover {
+    background-color: #B3B3B3;
+    transition: 0.5s;
+}
+
+main section.introducao-container div.curriculo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+main section.introducao-container div.info-basica div.redes {
+    display: flex;
+    margin: 5px 0;
+}
+
+main section.introducao-container div.info-basica div.redes a img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+
+main section.introducao-container div.perfil {
+    width: 290px;
+    height: 325px;
+}
+
+main section.introducao-container div.perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+/******************** SECTION EXPERIENCIA ************************/
+
+main section.experiencia-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+main section.experiencia-container h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+
+main section.experiencia-container div.experiencia {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+main section.experiencia-container div.experiencia div.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 5px;
+    height: auto;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+main section.experiencia-container div.experiencia div.caixa strong {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px;
+}
+
+main section.experiencia-container div.experiencia div.caixa p {
+    font-size: 20px;
+    color: #B3B3B3;
+    margin: 5px;
+}
+
+/********************* SECTION SOBREMIM *************************/
+
+main section.sobreMim-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+main section.sobreMim-container div.apresentacao {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 15px;
+    height: auto;
+}
+
+main section.sobreMim-container span {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 15px 0;
+}
+
+main section.sobreMim-container div.conteudoSobremim {
+    display: flex;
+}
+
+main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+main section.sobreMim-container div.conteudoSobremim div.apresentacao h3,
+main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+    margin: 10px 0;
+}
+
+main section.sobreMim-container div.conteudoSobremim div.perfil2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/********************* SECTION MEUS PROJETOS *************************/
+
+main section.projetos-container {
+    width: 100%;
+    height: auto;
+    background-color: #1A1818;
+    padding: 20px;
+}
+
+main section.projetos-container div.opcao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main section.projetos-container div.opcao h4 {
+    font-size: 22px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+main section.projetos-container div.opcao div.tipoProjeto {
+    display: flex;
+}
+
+main section.projetos-container div.opcao div.tipoProjeto button {
+    width: 100px;
+    font-size: 14px;
+    background-color: #1A1818;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main section.projetos-container div.opcao div.tipoProjeto button#web:hover,
+main section.projetos-container div.opcao div.tipoProjeto button#design:hover {
+    background-color: #5f4a4a;
+}
+
+#designProjetos {
+    display: none;
+}
+
+main section.projetos-container div.projetoWeb,
+main section.projetos-container div.projetoDesign {
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+
+main section.projetos-container div.projetoWeb div.caixa,
+main section.projetos-container div.projetoDesign div.caixa {
+    width: 265px;
+    min-height: 460px;
+    height: auto;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main section.sobreMim-container div.apresentacao {
+    margin-bottom: 15px;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.fotoProjeto,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.fotoProjeto {
+    width: 263px;
+    height: 100%;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.fotoProjeto img,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.fotoProjeto img {
+    width: 100%;
+    object-fit: fill;
+    background-size: cover;
+    height: 185px;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.infoProjeto,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.infoProjeto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.infoProjeto div.descricao,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.infoProjeto div.descricao {
+    margin-top: 10px;
+    height: 75px;
+    overflow-y: scroll;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.infoProjeto strong,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.infoProjeto strong {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.infoProjeto span,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.infoProjeto span {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.infoProjeto p,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.infoProjeto p {
+    font-size: 14px;
+    color: #B3B3B3;
+    padding-right: 5px;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo a,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(114, 114, 233);
+    margin: 0 15px;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.linguagemUsada,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.linguagemUsada {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 15px;
+}
+
+main section.projetos-container div.projetoWeb div.caixa div.conteudo div.linguagemUsada p,
+main section.projetos-container div.projetoDesign div.caixa div.conteudo div.linguagemUsada p {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
+}
+
+#metodologia {
+    background-color: rgb(163, 111, 13);
+}
+
+#framework {
+    background-color: rgb(115, 115, 230);
+}
+
+#atualCard {
+    background-color: rgba(74, 226, 144, 0.1);
+    border: 2px solid rgb(74, 226, 144);
+}
+
+#atualStatus {
+    color: rgb(74, 226, 144);
+    font-size: 14px;
+}
+
+/********************* SECTION HABILIDADES *************************/
+
+main section.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #ffffff;
+}
+
+main section.habilidades strong {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 65px 0;
+}
+
+main section.habilidades div.caixaLinguagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+main section.habilidades div.caixaLinguagem p {
+    font-size: 16px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    color: #B3B3B3;
+}
+
+main section.habilidades div.caixaLinguagem div.linguagensUsadas {
+    display: flex;
+}
+
+main section.habilidades div.caixaLinguagem div.linguagensUsadas img {
+    width: 60px;
+    height: 60px;
+}
+
+main section.habilidades div.caixaLinguagem div.linguagensTrabalhadas {
+    display: flex;
+}
+
+main section.habilidades div.caixaLinguagem div.linguagensTrabalhadas img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+main section.habilidades div.caixaLinguagem div.linguagensAprendendo img {
+    width: 60px;
+    height: 60px;
+    margin: 0 4px;
+}
+
+/********************* SECTION CARREIRA *************************/
+
+main section.carreira-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+main section.carreira-container strong {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+main section.carreira-container div.separador {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+main section.carreira-container div.separador h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin: 30px 0 10px 10px;
+}
+
+main section.carreira-container div.separador div.caixaCarreira {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    overflow-x: auto;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card {
+    display: flex;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 315px;
+    height: 225px;
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background-color: #232020;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.card div.descricao div.conteudoCarreira {
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    margin: 10px 0;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.card div.descricao div.conteudoCarreira span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.card div.descricao div.conteudoCarreira div {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.card div.descricao p {
+    display: block;
+    font-size: 14px;
+    margin: 15px 0;
+    color: #b3b3b3;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.card div.data {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.card div.data p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/********************* SECTION CONTATO *************************/
+
+main section.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+main section.contato-container h6 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 30px 0;
+}
+
+main section.contato-container div.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+main section.contato-container div.email div.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.contato-container div.email div.icone strong {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-left: 5px;
+}
+
+main section.contato-container div.email div.icone img {
+    width: 35px;
+    height: 35px;
+}
+
+main section.contato-container div.email p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-left: 5px;
+}
+
+main section.contato-container div.curriculo a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main section.contato-container div.curriculo {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main section.contato-container div.curriculo:hover {
+    background-color: #B3B3B3;
+    transition: 0.5s;
+}
+
+main section.contato-container div.curriculo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+main section.contato-container div.redesContato {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+main section.contato-container div.redesContato img{
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+}
+
+/********************* SECTION CONTATO *************************/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: #000000;
+}
+
+footer strong{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/******************************************************************/
+/******************************************************************/
+/********************* SECTION INTRODUCAO *************************/
+/******************************************************************/
+/******************************************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1040px) {
+    main section.introducao-container {
+        height: auto;
+    }
+
+    main section.introducao-container div.inicio {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil {
+        order: 0;
+        margin-bottom: 20px;
+    }
+
+    main section.introducao-container div.inicio div.perfil img {
+        width: 290px;
+        height: 290px;
+    }
+
+    main section.introducao-container div.inicio div.info-basica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    main section.introducao-container div.inicio div.curriculo {
+        order: 2;
+    }
+
+    main section.introducao-container div.curriculo img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    main section.introducao-container div.info-basica div.redes {
+        display: flex;
+        margin: 5px 0;
+    }
+
+    main section.introducao-container div.info-basica div.redes img {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao {
+        margin-bottom: 15px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto {
+        width: 263px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto img {
+        height: 185px;
+    }
+
+    /********* SECTION EXPERIENCIA *********/
+
+    main section.experiencia-container div.experiencia {
+        gap: 20px;
+    }
+
+    /********* SECTION SOBREMIM *********/
+
+    main section.sobreMim-container {
+        flex-direction: column;
+    }
+
+    main section.sobreMim-container div.apresentacao {
+        margin-bottom: 20px;
+    }
+
+
+    /******* FONTES DE TEXTO *******/
+
+    header div.logo p {
+        font-size: 16px;
+    }
+
+    header ul li {
+        font-size: 16px;
+    }
+
+    header div.modo div.status p {
+        font-size: 16px;
+    }
+
+    main section.introducao-container div.info-basica h1 {
+        font-size: 22px;
+    }
+
+    main section.introducao-container div.info-basica p {
+        font-size: 16px;
+    }
+
+    main section.introducao-container div.curriculo a {
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    main section.experiencia-container h2 {
+        font-size: 22px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa strong {
+        font-size: 22px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa p {
+        font-size: 16px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
+        font-size: 18px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    main section.introducao-container {
+        height: auto;
+    }
+
+    main section.introducao-container div.inicio {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        order: 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    main section.introducao-container div.inicio div.info-basica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    main section.introducao-container div.inicio div.curriculo {
+        order: 2;
+    }
+
+    main section.introducao-container div.curriculo img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    main section.introducao-container div.info-basica div.redes {
+        display: flex;
+        margin: 5px 0;
+    }
+
+    main section.introducao-container div.info-basica div.redes img {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+
+    main section.introducao-container div.perfil img {
+        width: 325px;
+        height: 325px;
+        border-radius: 100%;
+        background-size: cover;
+    }
+
+    main section.experiencia-container div.experiencia {
+        gap: 20px;
+    }
+
+    main section.sobreMim-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: justify;
+        padding: 0px 25px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao {
+        margin-bottom: 15px;
+    }
+
+    main section.projetos-container div.projeto div.caixa {
+        width: 265px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto {
+        width: 263px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto img {
+        height: 210px;
+    }
+
+
+    /******* FONTES DE TEXTO *******/
+
+    header div.logo p {
+        font-size: 14px;
+    }
+
+    header ul li {
+        font-size: 14px;
+    }
+
+    header div.modo div.status p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.info-basica h1 {
+        font-size: 20px;
+    }
+
+    main section.introducao-container div.info-basica p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.curriculo a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    main section.experiencia-container h2 {
+        font-size: 20px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa strong {
+        font-size: 18px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa p {
+        font-size: 14px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
+        font-size: 16px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.opcao h4 {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto button {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto strong {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo a {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.linguagemUsada p {
+        font-size: 14px;
+    }
+
+    main section.habilidades div.caixaLinguagem p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 721px) {
+    .desktop-container {
+        display: flex;
+    }
+
+    #menuVertical {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .mobile-container {
+        display: flex;
+    }
+
+    .desktop-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 575px) {
+    main section.projetos-container div.opcao {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto {
+        margin-top: 20px;
+    }
+
+    main section.projetos-container div.projeto div.conteudo div.fotoProjeto img {
+        height: 225px;
+    }
+
+    main section.projetos-container div.projeto div.caixa {
+        width: 265px;
+        min-height: 460px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto {
+        width: 263px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto img {
+        height: 210px;
+    }
+
+    /******* FONTES DE TEXTO *******/
+
+    header div.logo p {
+        font-size: 14px;
+    }
+
+    header ul li {
+        font-size: 14px;
+    }
+
+    header div.modo div.status p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.info-basica h1 {
+        font-size: 20px;
+    }
+
+    main section.introducao-container div.info-basica p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.curriculo a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    main section.experiencia-container h2 {
+        font-size: 20px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa strong {
+        font-size: 18px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa p {
+        font-size: 14px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
+        font-size: 16px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.opcao h4 {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto button {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto strong {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo a {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.linguagemUsada p {
+        font-size: 14px;
+    }
+
+    main section.habilidades div.caixaLinguagem p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 425px) {
+    main section.introducao-container {
+        height: auto;
+    }
+
+    main section.introducao-container div.inicio {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        order: 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    main section.introducao-container div.inicio div.info-basica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    main section.introducao-container div.inicio div.curriculo {
+        order: 2;
+    }
+
+    main section.introducao-container div.curriculo img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    main section.introducao-container div.info-basica div.redes {
+        display: flex;
+        margin: 5px 0;
+    }
+
+    main section.introducao-container div.info-basica div.redes img {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+
+    main section.introducao-container div.perfil img {
+        width: 325px;
+        height: 325px;
+        border-radius: 100%;
+        background-size: cover;
+    }
+
+    main section.experiencia-container div.experiencia {
+        gap: 20px;
+    }
+
+    main section.sobreMim-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: justify;
+        padding: 0px 25px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao {
+        margin-bottom: 15px;
+    }
+
+    main section.projetos-container div.opcao {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto {
+        margin-top: 20px;
+    }
+
+    main section.projetos-container div.projeto div.conteudo div.fotoProjeto img {
+        height: 225px;
+    }
+
+    main section.projetos-container div.projeto div.caixa {
+        width: 265px;
+        min-height: 460px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto {
+        width: 263px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto img {
+        height: 210px;
+    }
+
+    /******* FONTES DE TEXTO *******/
+
+    header div.logo p {
+        font-size: 14px;
+    }
+
+    header ul li {
+        font-size: 14px;
+    }
+
+    header div.modo div.status p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.info-basica h1 {
+        font-size: 20px;
+    }
+
+    main section.introducao-container div.info-basica p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.curriculo a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    main section.experiencia-container h2 {
+        font-size: 20px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa strong {
+        font-size: 18px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa p {
+        font-size: 14px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
+        font-size: 16px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.opcao h4 {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto button {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto strong {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo a {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.linguagemUsada p {
+        font-size: 14px;
+    }
+
+    main section.habilidades div.caixaLinguagem p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 350px) {
+    main section.introducao-container {
+        height: auto;
+    }
+
+    main section.introducao-container div.inicio {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        order: 0;
+    }
+
+    main section.introducao-container div.inicio div.perfil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    main section.introducao-container div.inicio div.info-basica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    main section.introducao-container div.inicio div.curriculo {
+        order: 2;
+    }
+
+    main section.introducao-container div.curriculo img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    main section.introducao-container div.info-basica div.redes {
+        display: flex;
+        margin: 5px 0;
+    }
+
+    main section.introducao-container div.info-basica div.redes img {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+
+    main section.introducao-container div.perfil img {
+        width: 325px;
+        height: 325px;
+        border-radius: 100%;
+        background-size: cover;
+    }
+
+    main section.experiencia-container div.experiencia {
+        gap: 20px;
+    }
+
+    main section.sobreMim-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: justify;
+        padding: 0px 25px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section.sobreMim-container div.conteudoSobremimdiv.apresentacao {
+        margin-bottom: 15px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.perfil2 img {
+        width: 240px;
+        height: 240px;
+        border-radius: 10px;
+    }
+
+    main section.projetos-container div.projeto div.conteudo div.fotoProjeto img {
+        height: 225px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto {
+        margin-top: 20px;
+    }
+
+    main section.projetos-container div.opcao {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    main section.projetos-container div.projeto div.caixa {
+        width: 265px;
+        min-height: 460px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto {
+        width: 263px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.fotoProjeto img {
+        height: 210px;
+    }
+
+    main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.card {
+        width: 300px;
+    }
+
+    /******* FONTES DE TEXTO *******/
+
+    header div.logo p {
+        font-size: 14px;
+    }
+
+    header ul li {
+        font-size: 14px;
+    }
+
+    header div.modo div.status p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.info-basica h1 {
+        font-size: 20px;
+    }
+
+    main section.introducao-container div.info-basica p {
+        font-size: 14px;
+    }
+
+    main section.introducao-container div.curriculo a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    main section.experiencia-container h2 {
+        font-size: 20px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa strong {
+        font-size: 18px;
+    }
+
+    main section.experiencia-container div.experiencia div.caixa p {
+        font-size: 14px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
+        font-size: 16px;
+    }
+
+    main section.sobreMim-container div.conteudoSobremim div.apresentacao p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.opcao h4 {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.opcao div.tipoProjeto button {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto strong {
+        font-size: 20px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.infoProjeto p {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo a {
+        font-size: 14px;
+    }
+
+    main section.projetos-container div.projeto div.caixa div.conteudo div.linguagemUsada p {
+        font-size: 14px;
+    }
+
+    main section.habilidades div.caixaLinguagem p {
+        font-size: 14px;
+    }
+}
+
+
+/* Estilizar a barra de rolagem no geral */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra vertical */
+    height: 10px;
+    /* Altura da barra horizontal */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Cor do fundo */
+}
+
+/* A parte "deslizante" da barra */
+::-webkit-scrollbar-thumb {
+    background: #3b2c2c;
+    /* Cor do "thumb" */
+    /*border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Efeito hover no thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #584444;
+    /* Cor ao passar o mouse */
+}
