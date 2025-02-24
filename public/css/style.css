@@ -455,7 +455,41 @@ main section.projetos-container div.projetoDesign div.caixa div.conteudo div.lin
     margin: 5px 5px 5px 0;
 }
 
-#metodologia {
+main section.projetos-container div.informacaoCores {
+    display: flex;
+}
+
+main section.projetos-container div.informacaoCores div.box-container {
+    display: flex;
+    margin: 10px 10px 0 0;
+}
+
+main section.projetos-container div.informacaoCores div.box-container div.boxCinza,
+main section.projetos-container div.informacaoCores div.box-container div.boxAzul,
+main section.projetos-container div.informacaoCores div.box-container div.boxLaranja {
+    margin: 0 5px 0 0;
+    width: 15px;
+    height: 15px;
+}
+
+main section.projetos-container div.informacaoCores div.box-container p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+main section.projetos-container div.informacaoCores div.box-container div.boxCinza {
+    background-color: #c9c9c9;
+}
+
+main section.projetos-container div.informacaoCores div.box-container div.boxAzul {
+    background-color: rgb(115, 115, 230);
+}
+
+main section.projetos-container div.informacaoCores div.box-container div.boxLaranja {
+    background-color: rgb(163, 111, 13);
+}
+
+#arquitetura {
     background-color: rgb(163, 111, 13);
 }
 
