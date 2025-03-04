@@ -315,6 +315,8 @@ main section.sobreMim-container div.conteudoSobremim div.perfil2 img {
     height: 300px;
     border-radius: 10px;
     margin-bottom: 30px;
+    background-size: cover;
+    object-fit: cover;
 }
 
 /********************* SECTION MEUS PROJETOS *************************/
