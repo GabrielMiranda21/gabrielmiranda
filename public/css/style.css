@@ -293,6 +293,7 @@ main section.sobreMim-container span {
 
 main section.sobreMim-container div.conteudoSobremim {
     display: flex;
+    gap: 50px;
 }
 
 main section.sobreMim-container div.conteudoSobremim div.apresentacao h3 {
