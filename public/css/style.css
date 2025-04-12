@@ -632,6 +632,64 @@ main section.carreira-container div.separador div.caixaCarreira div.carrossel-ca
     background-color: #232020;
 }
 
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    height: 225px;
+    margin-bottom: 10px;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado img {
+    width: 315px;
+    height: 225px;
+    border-radius: 10px;
+    filter: blur(0);
+    transition: filter 0.8s ease-in-out;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+    z-index: 0;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #584444;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    z-index: 2;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado span ion-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
 main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.card div.descricao div.conteudoCarreira {
     display: flex;
     flex-direction: column;
@@ -656,6 +714,7 @@ main section.carreira-container div.separador div.caixaCarreira div.card div.des
     margin: 15px 0;
     color: #b3b3b3;
 }
+
 
 main section.carreira-container div.separador div.caixaCarreira div.card div.data {
     display: flex;
