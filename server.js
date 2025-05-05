@@ -18,3 +18,15 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
+fetch(url)
+  .then(response => {
+    if (!response.ok) throw new Error('Erro ao buscar o recurso');
+    return response.json();
+  })
+  .then(data => {
+    // lidar com os dados
+  })
+  .catch(error => {
+    console.error('Erro no fetch:', error);
+  });
