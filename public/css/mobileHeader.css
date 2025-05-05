@@ -3,9 +3,9 @@ header div.container {
 }
 
 header div.container div.mobile-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 header div.container div.mobile-container div.menuVertical {
@@ -67,9 +67,12 @@ header div.container div.mobile-container div.modo div.claroEscuro img#light {
 
 header div.container div.mobile-container div.logo {
     position: absolute;
-    left: 50%; /* Coloca a logo no centro horizontal */
-    top: 32px; /* Alinha verticalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centralizar completamente */
+    left: 50%;
+    /* Coloca a logo no centro horizontal */
+    top: 32px;
+    /* Alinha verticalmente */
+    transform: translate(-50%, -50%);
+    /* Ajuste para centralizar completamente */
     order: 2;
 }
 
@@ -91,30 +94,30 @@ header div.mobile-container div.menu ul div.separador {
 }
 
 header div.mobile-container div.menu ul {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  order: 0;
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  padding: 10px 50px;
-  top: 0;
-  left: 0;
-  background-color: #3b2c2c;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 10px 50px;
+    top: 0;
+    left: 0;
+    background-color: #3b2c2c;
 }
 
 header div.mobile-container div.menu ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  white-space: nowrap;
-  margin: 5px 0;
-  width: 100%;
-  font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    white-space: nowrap;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 20px;
 }
 
 header div.mobile-container div.menu ul li a {
@@ -122,34 +125,50 @@ header div.mobile-container div.menu ul li a {
     color: #B3B3B3;
 }
 
-@media screen and (min-width: 425px) and (max-width: 720px){
+@media screen and (min-width: 425px) and (max-width: 720px) {
     header div.container div.mobile-container div.modo div.status p {
         font-size: 14px;
     }
-    
+
     header div.container div.mobile-container div.modo div.claroEscuro img#dark {
         width: 25px;
         height: 25px;
     }
-    
+
     header div.container div.mobile-container div.modo div.claroEscuro img#light {
         width: 25px;
         height: 25px;
+    }
+
+    header div.mobile-container div.menu ul {
+        max-width: 200px;
+    }
+
+    header div.mobile-container div.menu ul li {
+        font-size: 20px;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px){
+@media screen and (min-width: 320px) and (max-width: 425px) {
     header div.container div.mobile-container div.modo div.status p {
         font-size: 14px;
     }
-    
+
     header div.container div.mobile-container div.modo div.claroEscuro img#dark {
         width: 20px;
         height: 20px;
     }
-    
+
     header div.container div.mobile-container div.modo div.claroEscuro img#light {
         width: 20px;
         height: 20px;
+    }
+
+    header div.mobile-container div.menu ul {
+        max-width: 200px;
+    }
+
+    header div.mobile-container div.menu ul li {
+        font-size: 20px;
     }
 }
