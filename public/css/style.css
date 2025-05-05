@@ -632,7 +632,7 @@ main section.carreira-container div.separador div.caixaCarreira div.carrossel-ca
     background-color: #232020;
 }
 
-main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado {
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado{
     position: relative;
     display: flex;
     justify-content: center;
@@ -640,6 +640,14 @@ main section.carreira-container div.separador div.caixaCarreira div.carrossel-ca
     width: 315px;
     height: 225px;
     margin-bottom: 10px;
+}
+
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado div.icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
 }
 
 main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado img {
@@ -663,7 +671,7 @@ main section.carreira-container div.separador div.caixaCarreira div.carrossel-ca
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado span {
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado div.icon-container span {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -679,12 +687,12 @@ main section.carreira-container div.separador div.caixaCarreira div.carrossel-ca
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado:hover span {
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado:hover div.icon-container span {
     visibility: visible;
     opacity: 1;
 }
 
-main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado span ion-icon {
+main section.carreira-container div.separador div.caixaCarreira div.carrossel-card div.certificados-container div.certificado div.icon-container span ion-icon {
     width: 30px;
     height: 30px;
     color: #fff;

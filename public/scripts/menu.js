@@ -7,7 +7,7 @@ let menuHamburguer = document.querySelector("#menu");
 let ul = document.querySelector("ul");
 
 function checkScreenWidth() {
-    if (window.innerWidth > 720) {
+    if (window.innerWidth > 790) {
         headerDesktop.style.display = "flex";
         headerMobile.style.display = "none";
         menuVertical.style.display = "none";
