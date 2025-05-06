@@ -6,5 +6,5 @@
     "routes": [
         { "src": "/(.*)", "dest": "server.js" }
     ],
-    "alias": "gabrielmiranda-dev.vercel.app"
+    "alias": "gabrielmiranda-topaz.vercel.app"
 }
