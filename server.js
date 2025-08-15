@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Gabriel Miranda' });
 });
 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
+try {
+  app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
+  });
+} catch (error) {
+  console.log("erro no servidor")
+}
